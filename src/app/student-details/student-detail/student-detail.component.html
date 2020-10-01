@@ -1,0 +1,17 @@
+<form #form= "ngForm" (submit)="onSubmit(form)">
+  <input type="hidden" name ="SId" [value] ="service.formData.SId">
+    <div class="form-group">
+        <input type="text" name="SName" #SName="ngModel" [(ngModel)]="service.formData.SName" class="form-control" placeholder="student name" required>
+    </div>
+    <div class="form-group">
+      <input type="text" name="Phoneno" #SName="ngModel" [(ngModel)]="service.formData.Phoneno" class="form-control" placeholder="student phoneno" required>
+  </div>
+  <div class="form-group">
+    <input type="text" name="Class" #SName="ngModel" [(ngModel)]="service.formData.Class" class="form-control" placeholder="student class no" required>
+</div>
+<div class="form-group">
+  <button class="btn btn-success text-white" type="submit">
+     Submit
+  </button>
+</div>
+</form>
